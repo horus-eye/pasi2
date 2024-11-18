@@ -43,6 +43,12 @@ header{
 .navbar,header{
     background-color: #525151;
 }
+.navbar-toggler {
+    justify-content: flex-end; 
+    display: flex;
+    align-items: center; 
+}
+
 .nav-link{
     color:#f3f2f2 !important;
 }
@@ -72,11 +78,12 @@ header{
 }
 
 
-/* footer estilos */
+/* Footer estilos */
 .footer {
     background-color: #333;
     color: white;
     padding: 30px 0;
+    text-align: center; /* Centrado inicial */
 }
 
 .footer a {
@@ -87,6 +94,28 @@ header{
 .footer a:hover {
     text-decoration: underline;
 }
+
+.footer .row {
+    display: flex;
+    justify-content: center; /* Centra en pantalla grande */
+    gap: 20px;
+}
+
+.footer .col-md-4 {
+    flex: 1;
+    min-width: 200px; /* Asegura columnas uniformes */
+}
+
+.footer address, .footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Quita viñetas de listas */
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
 
 /* whatsapp button */
 #whatsapp-button {
