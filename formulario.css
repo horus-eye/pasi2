@@ -7,7 +7,7 @@ label{
 
 .formulario{
     border: 1px solid #ccc;
-    box-shadow:0px 0px 20px #a6a5a5;
+    box-shadow:0px 0px 10px #a6a5a5;
     background-color: #fefcfc;
     border-radius: 5px;
 }
@@ -23,4 +23,6 @@ label{
 .redSocial{
     margin-left:20px;
 }
-
+input,textarea,.form-email{
+    border:2px solid #c7c7c7 !important; 
+}
