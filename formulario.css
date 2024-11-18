@@ -1,0 +1,26 @@
+.icons-form{
+    color: #074cfc;
+}
+label{
+    color: #514f4f ;
+}
+
+.formulario{
+    border: 1px solid #ccc;
+    box-shadow:0px 0px 20px #a6a5a5;
+    background-color: #fefcfc;
+    border-radius: 5px;
+}
+.social-media{
+    margin: 0 auto;
+}
+@media (max-width: 768px){
+    .social-media{
+        width:100% !important;
+    }
+
+}
+.redSocial{
+    margin-left:20px;
+}
+

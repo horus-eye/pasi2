@@ -1,0 +1,123 @@
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+.gallery-item .zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: rgba(15, 15, 15, 0.8);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.gallery-item:hover .zoom-icon {
+    opacity: 1;
+}
+.modal-content {
+    background-color: #333;
+    color: white;
+}
+.modal-body {
+    position: relative;
+    text-align: center;
+}
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.modal-footer h5, .modal-footer p {
+    margin: 5px 0;
+}
+.control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+.control-btn.left {
+    left: 10px;
+}
+.control-btn.right {
+    right: 10px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-modal{
+    text-shadow:1px 1px 2px black;
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    .btn-modal{
+    text-shadow:1px 1px 2px black;
+    font-size: 30px !important;
+}
+}
+.bg-content-modal,.bg-menu-dropdown{
+    background-color: #3d3d3d !important;
+}
+.dropdown-item:hover{
+    background-color: #5a5959 !important;
+}
+
+/* Efecto de zoom solo en resoluciones tablet o menores */
+@media (max-width: 768px) {
+    .zoom-effect {
+        transition: transform 0.3s ease-in-out; /* Transición suave para el zoom */
+        transform: scale(2); /* Zoom al 200% */
+        object-fit: contain; /* Asegura que la imagen mantenga proporciones */
+    }
+
+    /* Centrar la imagen dentro del modal */
+    #lightboxImage {
+        margin: auto;
+        display: block;
+        max-width: 100%; /* Asegura que no se salga de los límites horizontales */
+        max-height: 100vh; /* Asegura que no se salga de los límites verticales */
+    }
+}
+
+
+
+/* Personalización de las tarjetas de video */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card video {
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
